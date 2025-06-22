@@ -5,7 +5,7 @@ const todoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    compeleted: {
+    completed: {    
         type: Boolean,
         default: false
     }
@@ -22,7 +22,6 @@ const TaskSchema = mongoose.Schema({
     priority: {
         type: String,
         enum: ["Low", "Medium", "High"],
-        default: "Medium"
     },
     status: {
         type: String,

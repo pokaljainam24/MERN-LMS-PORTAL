@@ -1,0 +1,23 @@
+Mount 🡒 Is user known?
+           │
+           ├─► Yes → do nothing.
+           │
+           └─► No → Is token stored?
+                     │
+                     ├─► No → stop loading, done.
+                     │
+                     └─► Yes → ask server for profile
+                                   │
+                                   ├─► Success → save user
+                                   └─► Failure → clear user
+                               (either way) stop loading.
+
+; ------------------------------------------------------------------------------------------------------- ;
+
+Want to explore further?
+
+-How axiosInstance is set up (base URL, interceptors for adding the token to headers).
+
+-How clearUser() and setUser() affect your app’s global auth context.
+
+-How to cancel this request if the component unmounts early (using an AbortController).

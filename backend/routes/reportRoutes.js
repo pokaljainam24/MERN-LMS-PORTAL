@@ -6,6 +6,6 @@ const { exportTasksReport, exportUsersReport } = require("../controllers/reportC
 const reportRouter = express.Router();
 
 reportRouter.get("/export/tasks", protect, adminOnly, exportTasksReport);
-reportRouter.get("/export/user", protect, adminOnly, exportUsersReport);
+reportRouter.get("/export/users", protect, adminOnly, exportUsersReport);
 
 module.exports = reportRouter;

@@ -1,26 +1,25 @@
-const multer = require("multer")
+const multer = require("multer");
+const path = require("path");
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'uploads/')
+        cb(null, 'uploads/');
     },
     filename: function (req, file, cb) {
-        cb(null, Date.now() + '-' + file.originalname)
+        cb(null, Date.now() + '-' + file.originalname);
     }
 });
 
-
-// File Filter
 const fileFilter = (req, file, cb) => {
-    // Accept image files only
     const allowedTypes = ['image/png', 'image/jpg', 'image/jpeg'];
     if (allowedTypes.includes(file.mimetype)) {
-        cd(null, true);
+        cb(null, true);
     } else {
-        cd(null, false);
+        cb(null, false);
     }
-}
+};
 
-const upload = multer({ storage: storage }).single("image");
+const upload = multer({ storage, fileFilter });
 
-module.exports = upload;
+/* ✅ Export actual middleware, not the multer object */
+module.exports = upload.single("image");
