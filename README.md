@@ -2,11 +2,6 @@
 
 A **Full Stack Learning Management System** built using **MongoDB**, **Express**, **React**, and **Node.js**. This platform allows users to manage courses, tasks, profiles, and progress seamlessly.
 
-![LMS Screenshot](https://raw.githubusercontent.com/pokaljainam24/MERN-LMS-PORTAL/main/screenshots/homepage.png)
-
-🔗 **Live Demo**: [Click Here to Visit](https://your-live-link.vercel.app)  
-📁 **Repository**: [MERN-LMS-PORTAL](https://github.com/pokaljainam24/MERN-LMS-PORTAL)
-
 ---
 
 ## 📋 Table of Contents
