@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/27ed7e9e-6d4b-4a2f-a4cd-4463ad504d2c)# 📚 MERN LMS Portal
+## 📚 MERN LMS Portal
 
 A **Full Stack Learning Management System** built using **MongoDB**, **Express**, **React**, and **Node.js**. This platform allows users to manage courses, tasks, profiles, and progress seamlessly.
 
