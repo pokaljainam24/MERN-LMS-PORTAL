@@ -69,12 +69,12 @@ const Root = () => {
   if (loading) {
     return <p>Loading...</p>;
   }
-
+  
   if (!user) {
-    return <Navigate to="/login" />;
-  }
+    return <Navigate to="/login" />
+  }              
 
   return user.role === "admin"
     ? <Navigate to="/admin/dashboard" />
-    : <Navigate to="/user/dashboard" />;
+    : <Navigate to="/user/dashboard" />
 };
