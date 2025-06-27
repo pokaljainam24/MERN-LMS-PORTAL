@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
   Navigate
-} from "react-router-dom";
+} from "react-router-dom"; 
 
 import Dashboard from './pages/Admin/Dashboard';
 import Login from './pages/Auth/Login';
