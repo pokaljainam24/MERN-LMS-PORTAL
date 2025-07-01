@@ -37,7 +37,7 @@ function App() {
             <Route path="/admin/create-task" element={<CreateTask />} />
             <Route path="/admin/users" element={<ManageUsers />} />
           </Route>
-
+       
           {/* User Routes */}
           <Route element={<PrivateRoute allowedRoles={["user"]} />}>
             <Route path="/user/dashboard" element={<UserDashboard />} />
