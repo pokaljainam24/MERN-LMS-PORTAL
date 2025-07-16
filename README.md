@@ -100,7 +100,7 @@ MERN-LMS-PORTAL/
 
 ## 🔗 Live Link
 
-🌐 [Explore My Mern-Stack Project](https://mern-lms-portal-i6kn.vercel.app/login)
+🌐 [Explore My Mern-Stack Project]()
 🌐 [Backend Server Link](https://mern-lms-portal.onrender.com)
 
 ## 🙋‍♂️ Author
